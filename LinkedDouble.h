@@ -7,6 +7,7 @@
 
 #include "NodeDouble.h"
 #include <vector>
+#include "string"
 
 template<class T>
 class LinkedDouble {
@@ -26,6 +27,10 @@ public:
     void addNodeAfterTo(NodeDouble<T> *, T);
 
     int getSize();
+
+    NodeDouble<T>* findNode(std::string);
+
+    T* getObject(int);
 
     std::vector<T> getList(bool);
 
